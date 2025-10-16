@@ -12,7 +12,7 @@ Thank you for your interest in contributing! This document provides guidelines f
 
 ### Reporting Bugs
 
-1. Check if the bug has already been reported in [Issues](https://github.com/YOUR_USERNAME/oracle-aidp-mcp-server/issues)
+1. Check if the bug has already been reported in [Issues](https://github.com/karthiksuku/oracle-aidp-mcp-server/issues)
 2. If not, create a new issue with:
    - Clear title and description
    - Steps to reproduce
@@ -22,7 +22,7 @@ Thank you for your interest in contributing! This document provides guidelines f
 
 ### Suggesting Features
 
-1. Check [Discussions](https://github.com/YOUR_USERNAME/oracle-aidp-mcp-server/discussions) for similar ideas
+1. Check [Discussions](https://github.com/karthiksuku/oracle-aidp-mcp-server/discussions) for similar ideas
 2. Create a new discussion or issue describing:
    - The problem you're trying to solve
    - Your proposed solution
@@ -32,7 +32,7 @@ Thank you for your interest in contributing! This document provides guidelines f
 
 1. **Fork the repository**
    ```bash
-   git clone https://github.com/YOUR_USERNAME/oracle-aidp-mcp-server.git
+   git clone https://github.com/karthiksuku/oracle-aidp-mcp-server.git
    cd oracle-aidp-mcp-server
    ```
 
@@ -235,7 +235,7 @@ Maintainers will:
 
 ## Questions?
 
-- Open a [Discussion](https://github.com/YOUR_USERNAME/oracle-aidp-mcp-server/discussions)
-- Comment on relevant [Issues](https://github.com/YOUR_USERNAME/oracle-aidp-mcp-server/issues)
+- Open a [Discussion](https://github.com/karthiksuku/oracle-aidp-mcp-server/discussions)
+- Comment on relevant [Issues](https://github.com/karthiksuku/oracle-aidp-mcp-server/issues)
 
 Thank you for contributing! 🎉

@@ -56,7 +56,7 @@ A comprehensive Model Context Protocol (MCP) server for Oracle AI Data Platform 
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/oracle-aidp-mcp-server.git
+git clone https://github.com/karthiksuku/oracle-aidp-mcp-server.git
 cd oracle-aidp-mcp-server
 ```
 
@@ -365,9 +365,9 @@ MIT License - See LICENSE file for details
 
 ## Support
 
-- **Issues**: [GitHub Issues](https://github.com/YOUR_USERNAME/oracle-aidp-mcp-server/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/YOUR_USERNAME/oracle-aidp-mcp-server/discussions)
-- **Documentation**: [Wiki](https://github.com/YOUR_USERNAME/oracle-aidp-mcp-server/wiki)
+- **Issues**: [GitHub Issues](https://github.com/karthiksuku/oracle-aidp-mcp-server/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/karthiksuku/oracle-aidp-mcp-server/discussions)
+- **Documentation**: [Wiki](https://github.com/karthiksuku/oracle-aidp-mcp-server/wiki)
 
 ## Acknowledgments
 
