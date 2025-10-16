@@ -1,0 +1,100 @@
+# Oracle AIDP MCP Server Configuration
+# Copy this file to aidp_config.yaml and update with your values
+
+aidp:
+  instances:
+    # You can define multiple AIDP instances here
+    # Use the instance name as the key (e.g., "production", "development", "melbourne")
+    my-instance:
+      # AIDP Instance OCID - Get from OCI Console
+      ocid: "ocid1.aidataplatform.oc1.<region>.your-instance-ocid-here"
+
+      # OCI Region (e.g., us-ashburn-1, ap-melbourne-1, eu-frankfurt-1)
+      region: "us-ashburn-1"
+
+      # Compartment OCID where your AIDP instance resides
+      compartment_ocid: "ocid1.compartment.oc1..your-compartment-ocid-here"
+
+      # Object Storage namespace (usually your tenancy name)
+      namespace: "your-namespace-here"
+
+      # Optional: Default bucket for uploads
+      default_bucket: "your-default-bucket-name"
+
+      # Optional: Default workspace
+      default_workspace: "default"
+
+      # Optional: Display name for this instance
+      display_name: "My AIDP Instance"
+
+  # Authentication configuration
+  auth:
+    # Method: "config_file" (default) or "instance_principal" (for OCI Compute)
+    method: "config_file"
+
+    # Path to OCI config file (only for config_file method)
+    config_path: "~/.oci/config"
+
+    # OCI config profile to use (only for config_file method)
+    profile: "DEFAULT"
+
+  # Default settings for operations
+  defaults:
+    # Cluster defaults
+    cluster_size: "small"
+    cluster_shape: "VM.Standard2.4"
+    cluster_worker_count: 2
+
+    # Notebook defaults
+    notebook_kernel: "python3"
+    notebook_shape: "VM.Standard2.1"
+
+    # Job defaults
+    job_timeout_minutes: 60
+    job_max_retries: 3
+
+    # Pipeline defaults
+    pipeline_batch_size: 1000
+
+    # Storage defaults
+    object_storage_tier: "Standard"
+    lifecycle_policy_days: 90
+
+    # Query defaults
+    max_query_results: 1000
+    query_timeout_seconds: 300
+
+  # Performance tuning
+  performance:
+    request_timeout_seconds: 300
+    max_concurrent_requests: 10
+    retry_max_attempts: 3
+    retry_backoff_seconds: 2
+    connection_pool_size: 20
+
+  # Caching configuration
+  cache:
+    enabled: true
+    ttl_seconds: 300
+    max_size_mb: 100
+
+  # Logging configuration
+  logging:
+    level: "INFO"  # DEBUG, INFO, WARNING, ERROR, CRITICAL
+    file: "~/aidp-mcp-server.log"
+    max_size_mb: 100
+    backup_count: 5
+    format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+
+  # Feature flags - Enable/disable specific modules
+  features:
+    instance_management: true
+    data_catalog: true
+    object_storage: true
+    compute_clusters: true
+    notebooks: true
+    jobs_workflows: true
+    data_pipelines: true
+    external_connections: true
+    ml_models: true
+    analytics_reporting: true

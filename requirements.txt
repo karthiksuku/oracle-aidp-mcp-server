@@ -1,0 +1,29 @@
+# Core MCP
+mcp>=1.17.0
+
+# Oracle Cloud Infrastructure
+oci>=2.161.0
+
+# Data handling
+pandas>=2.0.0
+pyarrow>=14.0.0
+numpy>=1.24.0
+
+# Configuration
+pyyaml>=6.0
+python-dotenv>=1.0.0
+
+# Utilities
+pydantic>=2.5.0
+httpx>=0.25.0
+tenacity>=8.2.0
+aiohttp>=3.9.0
+
+# Logging
+colorlog>=6.7.0
+
+# Development
+pytest>=7.4.0
+pytest-asyncio>=0.21.0
+black>=23.0.0
+mypy>=1.5.0
